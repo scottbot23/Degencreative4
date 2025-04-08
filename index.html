@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degen Creative</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #ffffff;
+            color: #1d1d1f;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 50;
+            padding: 1rem 0;
+        }
+        
+        .nav-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .social-links {
+            position: absolute;
+            right: 2rem;
+            display: flex;
+            gap: 24px;
+        }
+        
+        .social-icon {
+            width: 20px;
+            height: 20px;
+            color: #666;
+            transition: color 0.2s;
+        }
+        
+        .social-icon:hover {
+            color: #000;
+        }
+        
+        .hero-section {
+            padding-top: 100px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6rem 2rem 4rem;
+        }
+        
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+        
+        .hero-logo {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .hero-logo img {
+            max-width: 400px;
+            height: auto;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .hero-description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .button {
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        
+        .button-primary {
+            background-color: #000;
+            color: #fff;
+            border: none;
+        }
+        
+        .button-secondary {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+        }
+        
+        .button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        
+        .welcome-section {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        
+        .welcome-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+                padding: 4rem 1rem 2rem;
+            }
+            
+            .hero-content {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            
+            .hero-logo {
+                justify-content: center;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .button-group {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="social-links">
+                <a href="https://t.me/degencreative" target="_blank" rel="noopener noreferrer">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm5.6 8.2L16.2 18c-.2.8-1.5.9-1.9.2-.6-.8-1.7-2-2.9-3-.9.8-1.7 1.7-2.3 2.4-.3.4-.9.3-1.1-.1L7 15.2c-.2-.3 0-.8.3-1 1.5-1 3.3-2.3 4.4-3-.8-.8-2.3-2.1-2.8-2.5-.6-.4-.1-1.3.5-1.2 1.2.2 7.5 2.9 8.2 3.2.2.1.3.3.3.5 0 .1 0 .2-.1.3z"/>
+                    </svg>
+                </a>
+                <a href="https://instagram.com/degencreative" target="_blank" rel="noopener noreferrer">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2 0 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3 0-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2 0-1.3-.1-1.6-.1-4.8s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.6-.1 4.9-.1z"/>
+                    </svg>
+                </a>
+                <a href="mailto:contact@degencreative.com">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M0 3v18h24V3H0zm2 2h20l-10 8L2 5zm0 14V7l10 8 10-8v12H2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Decent degens creating real world applications together</h1>
+            <p class="hero-description">Join now and create projects as a community. If you've got an idea for an app/game/project let us know, if you have already built it and want to release through "Degen Creative" and get the full community support, even better.</p>
+            <div class="button-group">
+                <a href="#" class="button button-primary">Join Community</a>
+                <a href="#" class="button button-secondary">Submit Project</a>
+            </div>
+        </div>
+        <div class="hero-logo">
+            <img src="degen-creative-logo-updated.png" alt="Degen Creative Logo" />
+        </div>
+    </section>
+
+    <section class="welcome-section">
+        <h2>Welcome to Degen Creative</h2>
+        <p class="welcome-text">A community-driven platform for Solana enthusiasts and innovators who are passionate about creating real-world applications that bridge the gap between blockchain and mainstream technology.</p>
+        <p class="welcome-text">In the heart of Q2 2025, a new movement emerged in the Solana ecosystem. Degenerate Creative was born from a simple belief: that the future of blockchain technology lies not just in trading and speculation, but in creating tangible, real-world applications that people actually use.</p>
+        <p class="welcome-text">We're a community of builders, creators, and innovators who are passionate about bringing blockchain technology to the masses through iOS and Android applications, games, and innovative projects. Our focus extends beyond the blockchain, creating solutions that work seamlessly both on and off-chain.</p>
+        <p class="welcome-text">What sets us apart is our commitment to positive energy and genuine innovation. We believe in building a supportive environment where creators can thrive, share knowledge, and collaborate on groundbreaking projects. Our community is built on the principles of mutual support, technical excellence, and a shared vision of making blockchain technology accessible to everyone.</p>
+        <p class="welcome-text">Through platforms like Instagram, we're building a less toxic, more constructive space for crypto innovators to connect and grow. We believe in the power of positive community building and meaningful connections over short-term gains.</p>
+        <p class="welcome-text">Whether you're an experienced developer or just starting your journey in blockchain technology, there's a place for you in our community. We welcome anyone who shares our vision of creating meaningful applications that make a difference.</p>
+        <p class="welcome-text">Join us in building the future of decentralized applications. Whether you want to create your own app, game, or project, or simply want to be part of a community that's pushing the boundaries of what's possible in the blockchain space, Degenerate Creative is your home.</p>
+        <p class="welcome-text">Our team's commitment to growth extends beyond just building applications. For every $1 million market cap milestone we reach, our team wallet will allocate $1,000 USD to strategic partnerships with influencers and promoters who align with our vision.</p>
+    </section>
+</body>
+</html>
